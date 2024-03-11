@@ -1,17 +1,17 @@
 import LoginSignin from "./Components/LoginSignin";
-import {
-  Routes,
-  Route
-} from "react-router-dom";
+// import {
+//   Routes,
+//   Route
+// } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <Routes>
+      {/* <Routes>
         <Route path="front/"
           element={<LoginSignin />}
         />
-      </Routes>
-      
+      </Routes> */}
+      <LoginSignin />
     </div>
   );
 }
