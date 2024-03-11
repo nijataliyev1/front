@@ -1,8 +1,7 @@
 import LoginSignin from "./Components/LoginSignin";
 import {
   Routes,
-  Route,
-  Link,
+  Route
 } from "react-router-dom";
 function App() {
   return (
@@ -10,7 +9,7 @@ function App() {
       <Routes>
         <Route path="front/"
           element={<LoginSignin />}
-        ></Route>
+        />
       </Routes>
       
     </div>
