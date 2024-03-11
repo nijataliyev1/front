@@ -1,0 +1,101 @@
+.LoginSignin {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginSignin.cover1 {
+    background-image: url('../../images/loginBackground/cover1.jpeg');
+}
+
+.LoginSignin.cover2 {
+    background-image: url('../../images/loginBackground/cover2.avif');
+}
+
+.LoginSignin.cover3 {
+    background-image: url('../../images/loginBackground/cover3.avif');
+}
+
+.LoginSignin.cover4 {
+    background-image: url('../../images/loginBackground/cover4.avif');
+}
+
+.LoginSignin.cover5 {
+    background-image: url('../../images/loginBackground/cover5.avif');
+}
+
+.LoginSignin .main {
+    width: 500px;
+    height: 80%;
+    backdrop-filter: blur(10px);
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LoginSignin .header {
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+.LoginSignin .header h3 {
+    margin: 0 20px;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.LoginSignin .header h3.switched-blue {
+    background-color: #2196F3;
+    color: white;
+}
+
+.LoginSignin .header h3.switched-gray {
+    background-color: #CCCCCC;
+}
+
+
+
+.LoginSignin .login-form {
+    padding: 25px;
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.LoginSignin .login-form div {
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+
+}
+
+.LoginSignin .login-form label {
+    margin-bottom: 50px;
+}
+
+.LoginSignin .login-form div.non-visible-input {
+    display: flex;    
+}
+
+.LoginSignin .login-form div.non-visible-input input {
+    width: 80%;
+}
+
+.LoginSignin .login-form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.LoginSignin .login-form label {
+    font-size: 20px;
+}
+
