@@ -23,7 +23,7 @@
 }
 
 .LoginSignin.cover5 {
-    background-image: url('../../images/loginBackground/cover5.avif');
+    background-image: url('../../images/loginBackground/cover5.jpeg');
 }
 
 .LoginSignin .main {
@@ -59,9 +59,7 @@
     background-color: #CCCCCC;
 }
 
-
-
-.LoginSignin .login-form {
+.LoginSignin form {
     padding: 25px;
     width: 75%;
     height: 80%;
@@ -69,33 +67,145 @@
     flex-direction: column;
 }
 
-.LoginSignin .login-form div {
+.LoginSignin form.singup-form {
+    overflow-y: scroll;
+}
+
+.LoginSignin form.singup-form::-webkit-scrollbar {
+    background-color: rgba(0,0, 0, 0);
+}
+
+.LoginSignin form.singup-form::-webkit-scrollbar-thumb   {
+    background-color: rgba(175, 138, 138, 0.6) ;
+    border-radius: 10px;
+}
+
+.LoginSignin form button {
+    padding: 8px 15px;
+    width: fit-content;
+    align-self: flex-end;
+    border: none;
+    font-size: 20px;
+    border-radius: 25px;
+    background-color: #2196F3;
+}
+
+.LoginSignin form div {
     background-color: white;
     border-radius: 5px;
     margin-top: 5px;
 
 }
 
-.LoginSignin .login-form label {
+.LoginSignin form label {
     margin-bottom: 50px;
 }
 
-.LoginSignin .login-form div.non-visible-input {
+.LoginSignin form div.non-visible-input {
     display: flex;    
+    align-items: center;
 }
 
-.LoginSignin .login-form div.non-visible-input input {
+.LoginSignin form div.phone {
+    display: flex;    
+    align-items: center;
+
+}
+
+.LoginSignin form div.phone select {
+    height: 43px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.LoginSignin form .radio{
+    display: flex;
+    margin-bottom: 0;
+}
+
+.LoginSignin form .seria {
+    padding-left: 12px;
+}
+
+.LoginSignin form .radio label {
+    width: 50%;
+}
+
+.LoginSignin form div.non-visible-input input {
     width: 80%;
 }
 
-.LoginSignin .login-form input {
+.LoginSignin form input {
     padding: 10px;
     border: none;
     border-radius: 5px;
     font-size: 20px;
 }
 
-.LoginSignin .login-form label {
+.LoginSignin form button {
+    color: white;
+}
+
+.LoginSignin form label {
     font-size: 20px;
 }
 
+.LoginSignin .login-request-cover {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginSignin .login-request-cover div {
+    background-color: rgba(255, 255, 255);
+    border-radius: 20px;
+    width: 450px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.LoginSignin .login-request-cover input {
+    border: 2px solid gray;
+    padding: 8px;
+    width: 30px;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.LoginSignin .login-request-cover form {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    flex-direction: row;
+
+}
+
+.LoginSignin input:disabled {
+    color: black;
+}
+
+.LoginSignin .sign-up-alert {
+    /* border: red solid 1px; */
+    /* border-radius: 10px; */
+    /* background-color: rgba(255, 0, 0, 0.2); */
+    padding: 10px;
+    /* opacity: 0.5; */
+    /* background-color: white; */
+    
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 10px 0;
+}
+
+.LoginSignin .sign-up-alert p {
+    margin: 10px;
+    color: red;
+    font-weight: 600;
+    /* color: rgba(255, 255, 255, 0.1); */
+}

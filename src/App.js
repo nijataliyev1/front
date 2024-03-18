@@ -1,17 +1,16 @@
 import LoginSignin from "./Components/LoginSignin";
-// import {
-//   Routes,
-//   Route
-// } from "react-router-dom";
+import { useSelector } from 'react-redux';
+
 function App() {
+
+  const general = useSelector(state => state.general);
+
   return (
     <div className="App">
-      {/* <Routes>
-        <Route path="front/"
-          element={<LoginSignin />}
-        />
-      </Routes> */}
-      <LoginSignin />
+      {
+        Boolean(general.user) ||
+        <LoginSignin />
+      }
     </div>
   );
 }
