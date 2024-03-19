@@ -209,3 +209,24 @@
     font-weight: 600;
     /* color: rgba(255, 255, 255, 0.1); */
 }
+
+.LoginSignin .disabled-radio {
+    position: relative;
+}
+
+.LoginSignin .disabled-radio input {
+    position: absolute;
+    top: 5.5px;
+    left: 64px
+
+}
+
+.LoginSignin .disabled-radio .checked {
+    background-color: #2196F3;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 65px
+}

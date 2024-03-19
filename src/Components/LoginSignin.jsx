@@ -95,7 +95,11 @@ const LoginSignin = () => {
                     setSignupPhoneNotFound(true);
                 }
                 if (d.length && data.length && password === rePassword) {
-                    //Signup burada yazilacaq
+                    dispatch(requestUser({
+                        phone: d[0].number,
+                        user: data[0],
+                        password
+                    }))
                     console.log("Teleb ugurlu")
                 }
             })
@@ -125,8 +129,13 @@ const LoginSignin = () => {
             if (String(general.requsetedUser.verCode) === code) {
                 let user = { ...general.requsetedUser };
                 delete user.verCode;
-                dispatch(login(user))
-                dispatch(requestUser(null))
+                if (mode === 'signup') {
+                    
+                }
+                else {
+                    dispatch(login(user))
+                    dispatch(requestUser(null))
+                }
             }
             else {
                 [...input.parentElement.children]
@@ -245,11 +254,13 @@ Bu kodu heç kim ilə paylaşmayın"`)
                                 </div>
                             </label>
                             <label className='radio'>
-                                <label>Kişi
+                                <label className="disabled-radio">Kişi
                                     <input className='test' checked={signupObj.gender === "M" && 'checked'} type="radio" name='gender' value='M' disabled/>
+                                    <div className={signupObj.gender === "M" ? 'checked' : ''}></div>
                                 </label>
-                                <label>Qadın
+                                <label className="disabled-radio">Qadın
                                     <input checked={signupObj.gender === "F" && 'checked'} type="radio" name='gender' value='F' disabled/>
+                                    <div className={signupObj.gender === "F" ? 'checked' : ''}></div>
                                 </label>
                             </label>
                             <label htmlFor="birth">Doğum tarixi
